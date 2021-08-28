@@ -1,0 +1,590 @@
+
+
+
+
+<head>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>UNDER DEVELOPMENT</title>
+        <script>
+            $(document).ready(function(){
+                $(".dropdown").hover(function(){
+                    var dropdownMenu = $(this).children(".dropdown-menu");
+                    if(dropdownMenu.is(":visible")){
+                        dropdownMenu.parent().toggleClass("open");
+                    }
+                });
+            });
+            // Add slideDown animation to Bootstrap dropdown when expanding.
+            $('.dropdown').on('show.bs.dropdown', function() {
+                $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+            });
+    
+            // Add slideUp animation to Bootstrap dropdown when collapsing.
+            $('.dropdown').on('hide.bs.dropdown', function() {
+                $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+            });     
+            </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    
+        <style>
+            #donate-here {
+                        position: relative;
+                        font-family: 'Open Sans', sans-serif;
+                        top: 200px;
+                        left: 50px;
+                        width: 218px;
+                        float: left;
+                        height: 100px;
+                        background-color: white;
+                        color: black;
+                        text-align: center;
+                        vertical-align: middle;
+                        line-height: 100px;
+                        font-size: 30px;
+                        outline: green solid 2px;
+                        transition: 0.3s;
+            
+                    }
+            
+                    #donate-here:hover {
+                        background-color: #53900F;
+                        color:white;
+                    }
+                    #address-div {
+                        position: relative;
+                        font-family: 'Open Sans', sans-serif;
+                        top: 310px;
+                        left: 48px;
+                        width: 220px;
+                        height: 315px;
+                        background-color: #53900F;
+                        text-align: center;
+                        margin: 0;
+                        padding: 0 0 0 0;
+                    }
+                    #gifts-that-give-div {
+                        position: relative;
+                        font-family: 'Open Sans', sans-serif;
+                        top: 320px;
+                        left: 50px;
+                        width: 218px;
+                        float: left;
+                        height: 200px;
+                        background-color: white;
+                        color: black;
+                        text-align: center;
+                        vertical-align: middle;
+                        line-height: 100px;
+                        
+                        outline: green solid 2px;
+                        transition: 0.3s;
+            
+                    }
+            
+                    #gifts-that-give-div:hover {
+                        background-color: #53900F;
+                        color:white;
+                    }
+                    #newsletter {
+                        position: relative;
+                        font-family: 'Open Sans', sans-serif;
+                        top: 550px;
+                        right: 168px;
+                        width: 218px;
+                        float: left;
+                        height: 200px;
+                        background-color: white;
+                        color: black;
+                        text-align: center;
+                        vertical-align: middle;
+                        line-height: 100px;
+                        
+                        outline: green solid 2px;
+                        transition: 0.3s;
+            
+                    }
+                    #email {
+                        width:200px;
+                        height: 50px;
+                        font-size: 25px;
+                        position: relative;
+                        top: 20px;
+                    }
+            
+                    #newsletter:hover {
+                        background-color: #53900F;
+                        color:white;
+                    }
+                    #ourprogrammes {
+                        position: relative;
+                        font-family: 'Open Sans', sans-serif;
+                        top: 775px;
+                        right: 387px;
+                        width: 218px;
+                        height: 500px;
+                        float: left;
+                        height: 200px;
+                        background-color: white;
+                        color: black;
+                        
+                        outline: green solid 2px;
+                        transition: 0.3s;
+                    }
+                    a {
+                        color: #53900F;
+                    }
+                    .centered {
+                        text-align: center;
+                    }
+                    #media-div {
+                        position: relative;
+                        font-family: 'Open Sans', sans-serif;
+                        top: 1000px;
+                        right: 605px;
+                        width: 218px;
+                        height: 200px;
+                        float: left;
+                        height: 200px;
+                        background-color: white;
+                        color: black;
+                        
+                        outline: green solid 2px;
+                        transition: 0.3s;
+                    }
+                    @font-face {
+            font-family:papyrus;
+            src: url(PAPYRUS.ttf);
+        }
+        body{ font-family: Arial;}
+        .bg-pale {
+            background-color: #d2d9d5;
+        }
+        .navbar {
+            height: 80px;
+        }
+        .dropdown-menu > li > a:hover {
+            background-image: none;
+            color:green;
+            outline: none;
+
+        }
+        .nav {
+            font-size: 8px;
+        }
+        .nav-item {
+            outline: none;
+        }
+        .dropdown-toggle {
+            outline: none;
+        }
+        .dropdown-menu {
+            border-radius: 10px;
+            outline: none;
+        }
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
+        #title-div {
+            height: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        @media (min-width: 992px) {
+            .animate {
+                animation-duration: 0.5s;
+                -webkit-animation-duration: 0.5s;
+                animation-fill-mode: both;
+                -webkit-animation-fill-mode: both;
+            }
+        }
+        .navbar {
+                top: 80px;
+            } 
+        #title {
+            position: relative;
+            font-family: papyrus;
+            font-size: 70px;
+            top: 15px;
+        }
+        #home-nav-item {
+                margin-left: 0px;
+            }
+
+        @media (min-width: 992px) {
+
+            #logo {
+                position: relative;
+                left: 20px;
+                width: 75px;
+                margin: 0;
+                padding: 0;
+            }
+            #title {
+                font-size: 80px;
+                left: 50px;
+                top: 40px;
+            }
+            .navbar {
+                top: 150px;
+            } 
+            #home-nav-item {
+                margin-left: 40px;
+            }
+
+            
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(1rem);
+                opacity: 0;
+        }
+            100% {
+                transform:translateY(0rem);
+                opacity: 1;
+        }
+            0% {
+                transform: translateY(1rem);
+                opacity: 0;
+            }
+        }
+
+        @-webkit-keyframes slideIn {
+            0% {
+                -webkit-transform: transform;
+                -webkit-opacity: 0;
+        }
+            100% {
+                -webkit-transform: translateY(0);
+                -webkit-opacity: 1;
+        }
+            0% {
+                -webkit-transform: translateY(1rem);
+                -webkit-opacity: 0;
+        }
+        }
+
+        .slideIn {
+            -webkit-animation-name: slideIn;
+            animation-name: slideIn;
+        }
+        #content {
+            position: relative;
+            bottom: 250px;
+            left: 300px;
+            width: 900px;
+            text-align: left;
+            font-family: 'Open Sans', sans-serif;
+        }
+        p {
+            font-family: 'Open Sans', sans-serif;
+            text-align: left;
+        }
+        .page-header {
+            background-color: #53900F;
+            height: 40px;
+            margin-top: 130px;
+            width: 600px;
+            border-radius: 40px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 40px;
+            color: white;
+            font-weight: bold;
+            
+        }
+        .infobox {
+            float:left;
+            width: 400px;
+            height: 550px;
+            border-radius: 10px;
+            margin-top: 100px;
+            background-color: #53900F;
+        }
+        </style>
+            
+</head>
+
+
+<body>
+    <div id = "title-div" class= "pagewide">
+        <img id = "logo" src= "tabitha_logo.png">
+        <span id= "title">Tabitha Cambodia</span>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-pale">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li id = "home-nav-item" class="nav-item">
+                <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    About us
+                  </a>
+                <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="aboutus.html">Description of Tabitha</a></li>
+                    <li><a class="dropdown-item" href="map.html">Map</a></li>
+               </li>
+               </ul>
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tabitha Programmes
+                  </a>
+                <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="SavingsAndFamilyPartnerships.html">Savings & Family Partnerships</a></li>
+                    <li><a class="dropdown-item" href="watersources.html">Water Sources</a></li>
+                    <li><a class="dropdown-item" href="housebuilding.html">House Building</a></li>
+                    <li><a class="dropdown-item" href="school.html">Schools</a></li>
+                    <li><a class="dropdown-item" href="https://www.nokor-tep.net/">Hospital</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="newsletter.html">Newsletter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Donate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="publications.html">Publications</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Media
+                      </a>
+                    <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="newsandevents.html">News & Events</a></li>
+                        <li><a class="dropdown-item" href="photos.html">Photo Gallery</a></li>
+                        <li><a class="dropdown-item" href="videos.html">Videos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="FAQ.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="contactus.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="onlineshop.html">Online Shopping</a>
+                </li>
+              
+            </ul>
+            
+
+          </div>
+        </div>
+      </nav>
+
+      <div class= "container">
+      <a href="#">
+        <div id="donate-here">
+            Donate Now
+        </div>
+      </a>
+      <div id="address-div">
+          <span style="position: relative; bottom: 80px; font-size: 22px; color: white; font-weight: bold;">Address & Location</span>
+          <p style="position: relative; bottom: 60px; color:white; margin: 2px;">Please be informed that Tabitha Cambodia has its new address at Nos. 173/174 Street 598 Boeng Kak 2, Khan Toul Kork (Across Natural Garden Shop). Our phone numbers - Cellcard: 012746653 Smart: 098575367</p>
+      </div>
+
+      <a href="#">
+        <div id="gifts-that-give-div">
+            <span style="font-size: 30px;">Gifts that Give</span>
+            Change lives for 20$
+        </div>
+      </a>
+
+      <div id="newsletter">
+          Sign up for our newsletters!
+          <form>
+              <input type="text" id= "email">
+          </form>
+      </div>
+
+      <div id="ourprogrammes">
+          <div class="centered">Our programmes:</div>
+        <ul>
+            <li><a href="SavingsAndFamilyPartnerships.html">Savings and Family Partnerships</a></li>
+            <li><a href="watersources.html">Water Sources</a></li>
+            <li><a href="housebuilding.html">House Building</a></li>
+            <li><a href="school.html">Schools</a></li>
+            <li><a href="onlineshop.html">Online Shopping</a></li>
+            <li><a href="https://www.nokor-tep.net/">Hospital</a></li>
+        </ul>
+      </div>
+      <div id="media-div">
+        <div class="centered">Media:</div>
+      <ul>
+          <li><a href="newsandevents.html">News</a></li>
+          <li><a href="photos.html">Photo Gallery</a></li>
+          <li><a href="videos.html">Video</a></li>
+      </ul>
+    </div>
+
+
+  <div id= "content">
+      <div class= "page-header" style=" width: 900px;"><span style="color: white; position: relative; bottom: 70px;">Community Development through Family Savings Program and Donor Partnerships</span></div>
+
+      <p><span style="color: #53900F;">Problems of Poverty</span>
+        <br>
+        <br>
+        Poverty is partly an attitudinal and psychological state. In Cambodia, the past 40 years of war, genocide and its aftermath have left people feeling disenfranchised from life itself. The lack of security, the loss of family members, and the loss of their original homes over so many years has resulted in a severe poverty that is both physical and psychological.
+        <br>
+        <img style="float: right; padding: 5px;"src="save_1.jpg">
+        In addition to their recent past, several cultural and societal issues result in poverty. Cambodians see their children as an assured method of social security. They believe that their children must take care of their parents in their old age, therefore they have many children.
+        <br>
+        A second issue arising from this is that when a child gets married, the child will receive a portion of the family land. As their children reach a marriageable age, the land a family owns shrinks to a point where the land can no longer support a family unless the land can bear food throughout the year. Currently, one crop a year is the norm.
+        <br>
+        A third issue which causes poverty is illness within the family. Whenever a family member becomes very ill, the family begins to sell off what they own in order to find and pay for medical treatment. Usually a family sells its animals, then their land and in severe cases they will sell their.
+    </p>
+    <p>
+        <span style="color: #53900F;">Solutions to the poverty cycle:</span>
+<br>
+In order to break the attitudinal and psychological barriers to development, Tabitha Cambodia focuses on savings. The rationale is that savings is a non threatening way to make choices, a very necessary component for a people who have a very low self esteem; who need to have security and little threat and who must make their own choices without fear from us or others.
+<br>
+All families in Cambodia, no matter how poor have some cash available. They may earn this money by cutting grass to sell to a farmer or collecting discarded plastic bottles and cans.  This cash flow is necessary to survive; there is no social security program. Saving a little of this cash flow each week is at the heart of this program.
+    </p>
+    <p>
+        <img style="float: left; padding: 5px; width: 500px;"src="save_2.png">
+        <span style="color: #53900F;">Dream and Savings Cycles</span>
+        <br>
+
+        The “Community Development through Savings Program” helps families to "dream" of a better future. Families are encouraged to save a small amount each week; this money is collected by the local Tabitha staff. At the end of each 10-week “savings cycle”, the savings are returned. The family is then encouraged to purchase their first "dream" – whether it is drinking glasses, clothes for the baby, or a new tarpaulin to keep the rain off. Families continue in the savings programs.
+
+
+    </p>
+    <p><span style="color: #53900F;">Savings enables families to meet their Basic Needs</span>
+        <img style="float: left; padding: 5px; width: 500px;"src="save_3.png">
+
+
+        Savings enables families to provide for their basic needs. Families are able to eat a balanced and nutritious meal three times day; have items to enable cooking, be able to have bedding and mosquito nets; several sets of clothing per family member, chairs and tables to sit at; etc...</p>
+    
+    <p>
+        <br><br>
+        <span style="color: #53900F;">Savings enables families to increase their Sources of Income</span>
+        <br>
+        <img style="float: right; padding: 5px; width: 500px;"src="pigs.png">
+
+Through savings families are able to increase their sources of useable income through the raising of pigs, chickens, ducks; through the development of small businesses; through the growing of vegetables and rice.
+
+
+<span style="color: #53900F;">Savings enables families to improve their security through the improvement and building of their own homes</span>
+<br>
+
+Savings enables families to rebuild their homes by purchasing materials and paying for construction labor through the ten week cycles – enabling homes to be rebuilt parts at a time without overwhelming the families with debt.
+    </p>
+
+
+    <p>
+        <span style="color: #53900F;">Savings enables families to achieve transportation and educational opportunities for their children</span><br>
+
+
+Through savings families are able to purchase transportation items such as bicycles which allow children to be able to attend school while still be able to help with family chores. Savings enables such items as school uniforms, school supplies and fees to be paid so that children can attend school.
+
+
+
+    </p>
+
+    <p>
+
+
+        <span style="color: #53900F;">Savings enables a family to celebrate social occasions and
+to meet crisis without losing all hope</span>
+    <img style="float: right; padding: 5px; width: 500px;"src="biketoschool.png">
+        <br>
+
+
+Savings enables families to celebrate special occasions such as New Years in a socially acceptable way without going broke; families are able to celebrate births and deaths; families are able to practice their faith without undo pressure.
+
+
+The core measurement Tabitha Cambodia uses to measure
+each family’s progress is called Unit of Change
+
+
+Units of change are visible, concrete changes a family has achieved through savings. These units are measured each month through Tabitha staff, volunteers and by each individual family. It is the measurement of these changes that ensures a family’s progress over the years until graduation.
+    </p>
+    <div style= "width: 900px;"class="page-header">How can you help?</div>
+
+
+    <p style="color: #53900F;">
+        <br>
+        <span style="margin-top:20px; color: #53900F;"></span>Family Partnerships and Savings Program:</span>
+<br><br><br>
+Tabitha Cambodia Plans for Families in Savings Program – September 2020 until August 2021
+<br>
+<br>
+Our plans for this program year are to reach out to 17,500 families with 140,000 dependents through Savings Program.
+<br>
+<br>
+Current families in Savings Program: 14,440 families with 115,520 dependents (as of February 28,2017)
+<br>
+<br>
+Tabitha has made an impact to 592,760 families with 4,742,080 dependents from 1994 to date
+<br>
+<br>
+(please click the pictures to see the changes in the lives of Tabitha families)
+<br>
+<br>
+Planned Units of change from September 2016 through August 2017: 50,127 units of change
+<br>
+    </p>
+    <div style="margin-right: 100px;" class="infobox">
+    <img style= "margin-top: 20px;margin-left: 25px; width: 350px;"src="savings1.jpg">
+    <p style= "color: white; margin-left: 20px;"><br>Planned Basic Necessities: 2,413 units of Change<br>
+        Actual Basic Necessities units of change to date: 2,675 units<br>
+        
+        From 1994 to date: 879,853 units of change</p>
+    </div>
+    <div class="infobox">
+        <img style= "margin-top: 20px;;margin-left: 25px; width: 350px;"src="savings2.jpg">
+        <p style= "color: white; margin-left: 20px;"><br>Planned Environment Changes: 936 units of change<br>
+            Actual Environment units of change to date: 1,236 units<br>
+            
+            From 1994 to date : 174,597 units of change</p>
+    </div>
+    <div style="margin-right: 100px;" class="infobox">
+        <img style= "margin-top: 20px;;margin-left: 25px; width: 350px;" src="savings3.jpg">
+        <p style= "color: white; margin-left: 20px;"><br>Planned Income Generation Changes: 15,512 units of change<br>
+            <br>Actual Income Generation units of change to date: 82,273 units
+            
+            From 1994 to date : 560,500 units of change</p>
+    </div>
+    <div class="infobox">
+        <img style= "margin-top: 20px;margin-left: 25px; width: 350px;" src="savings4.jpg">
+        <p style= "color: white; margin-left: 20px;">
+            <br>Planned Housing & Security Changes: 5,389 units of change<br>
+            Actual Housing & Security units of change to date 1,600 units<br>
+            
+            From 1994 to date : 194,083 units of change</p>
+    </div>
+    <div style="margin-right: 100px;" class="infobox">
+        <img style= "margin-top: 20px;margin-left: 25px; width: 350px;" src="savings5.jpg">
+        <p style= "color: white; margin-left: 20px;">
+        <br>Planned Education & Transportation Changes: 2,713 units of change<br>
+        Actual Education &Transportation units of change to date: 1,848 units<br>
+        
+        From 1994 to date : 201,455 units of change</p>
+    </div>
+    <div class="infobox">
+        <img style= "margin-top: 20px;margin-left: 25px; width: 350px;" src="savings6.jpg">
+        <p style= "color: white; margin-left: 20px;"><br>Planned Health & Social Occasions Changes: 3,481 units of change<br>
+            Actual Health & Social Occasions units of change to date: 2,252 units<br>
+            
+            <br>From 1994 to date : 192,889 units of change</p>
+    </div>
+  </div>
+
+</body>

@@ -1,0 +1,528 @@
+
+
+
+
+<head>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>UNDER DEVELOPMENT</title>
+        <script>
+            $(document).ready(function(){
+                $(".dropdown").hover(function(){
+                    var dropdownMenu = $(this).children(".dropdown-menu");
+                    if(dropdownMenu.is(":visible")){
+                        dropdownMenu.parent().toggleClass("open");
+                    }
+                });
+            });
+            // Add slideDown animation to Bootstrap dropdown when expanding.
+            $('.dropdown').on('show.bs.dropdown', function() {
+                $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+            });
+    
+            // Add slideUp animation to Bootstrap dropdown when collapsing.
+            $('.dropdown').on('hide.bs.dropdown', function() {
+                $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+            });     
+            </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    
+        <style>
+            #donate-here {
+                        position: relative;
+                        font-family: 'Open Sans', sans-serif;
+                        top: 200px;
+                        left: 50px;
+                        width: 218px;
+                        float: left;
+                        height: 100px;
+                        background-color: white;
+                        color: black;
+                        text-align: center;
+                        vertical-align: middle;
+                        line-height: 100px;
+                        font-size: 30px;
+                        outline: green solid 2px;
+                        transition: 0.3s;
+            
+                    }
+            
+                    #donate-here:hover {
+                        background-color: #53900F;
+                        color:white;
+                    }
+                    #address-div {
+                        position: relative;
+                        font-family: 'Open Sans', sans-serif;
+                        top: 310px;
+                        left: 48px;
+                        width: 220px;
+                        height: 315px;
+                        background-color: #53900F;
+                        text-align: center;
+                        margin: 0;
+                        padding: 0 0 0 0;
+                    }
+                    #gifts-that-give-div {
+                        position: relative;
+                        font-family: 'Open Sans', sans-serif;
+                        top: 320px;
+                        left: 50px;
+                        width: 218px;
+                        float: left;
+                        height: 200px;
+                        background-color: white;
+                        color: black;
+                        text-align: center;
+                        vertical-align: middle;
+                        line-height: 100px;
+                        
+                        outline: green solid 2px;
+                        transition: 0.3s;
+            
+                    }
+            
+                    #gifts-that-give-div:hover {
+                        background-color: #53900F;
+                        color:white;
+                    }
+                    #newsletter {
+                        position: relative;
+                        font-family: 'Open Sans', sans-serif;
+                        top: 550px;
+                        right: 168px;
+                        width: 218px;
+                        float: left;
+                        height: 200px;
+                        background-color: white;
+                        color: black;
+                        text-align: center;
+                        vertical-align: middle;
+                        line-height: 100px;
+                        
+                        outline: green solid 2px;
+                        transition: 0.3s;
+            
+                    }
+                    #email {
+                        width:200px;
+                        height: 50px;
+                        font-size: 25px;
+                        position: relative;
+                        top: 20px;
+                    }
+            
+                    #newsletter:hover {
+                        background-color: #53900F;
+                        color:white;
+                    }
+                    #ourprogrammes {
+                        position: relative;
+                        font-family: 'Open Sans', sans-serif;
+                        top: 775px;
+                        right: 387px;
+                        width: 218px;
+                        height: 500px;
+                        float: left;
+                        height: 200px;
+                        background-color: white;
+                        color: black;
+                        
+                        outline: green solid 2px;
+                        transition: 0.3s;
+                    }
+                    a {
+                        color: #53900F;
+                    }
+                    .centered {
+                        text-align: center;
+                    }
+                    #media-div {
+                        position: relative;
+                        font-family: 'Open Sans', sans-serif;
+                        top: 1000px;
+                        right: 605px;
+                        width: 218px;
+                        height: 200px;
+                        float: left;
+                        height: 200px;
+                        background-color: white;
+                        color: black;
+                        
+                        outline: green solid 2px;
+                        transition: 0.3s;
+                    }
+                    @font-face {
+            font-family:papyrus;
+            src: url(PAPYRUS.ttf);
+        }
+        body{ font-family: Arial;}
+        .bg-pale {
+            background-color: #d2d9d5;
+        }
+        .navbar {
+            height: 80px;
+        }
+        .dropdown-menu > li > a:hover {
+            background-image: none;
+            color:green;
+            outline: none;
+
+        }
+        .nav {
+            font-size: 8px;
+        }
+        .nav-item {
+            outline: none;
+        }
+        .dropdown-toggle {
+            outline: none;
+        }
+        .dropdown-menu {
+            border-radius: 10px;
+            outline: none;
+        }
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
+        #title-div {
+            height: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        @media (min-width: 992px) {
+            .animate {
+                animation-duration: 0.5s;
+                -webkit-animation-duration: 0.5s;
+                animation-fill-mode: both;
+                -webkit-animation-fill-mode: both;
+            }
+        }
+        .navbar {
+                top: 80px;
+            } 
+        #title {
+            position: relative;
+            font-family: papyrus;
+            font-size: 70px;
+            top: 15px;
+        }
+        #home-nav-item {
+                margin-left: 0px;
+            }
+
+        @media (min-width: 992px) {
+
+            #logo {
+                position: relative;
+                left: 20px;
+                width: 75px;
+                margin: 0;
+                padding: 0;
+            }
+            #title {
+                font-size: 80px;
+                left: 50px;
+                top: 40px;
+            }
+            .navbar {
+                top: 150px;
+            } 
+            #home-nav-item {
+                margin-left: 40px;
+            }
+
+            
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(1rem);
+                opacity: 0;
+        }
+            100% {
+                transform:translateY(0rem);
+                opacity: 1;
+        }
+            0% {
+                transform: translateY(1rem);
+                opacity: 0;
+            }
+        }
+
+        @-webkit-keyframes slideIn {
+            0% {
+                -webkit-transform: transform;
+                -webkit-opacity: 0;
+        }
+            100% {
+                -webkit-transform: translateY(0);
+                -webkit-opacity: 1;
+        }
+            0% {
+                -webkit-transform: translateY(1rem);
+                -webkit-opacity: 0;
+        }
+        }
+
+        .slideIn {
+            -webkit-animation-name: slideIn;
+            animation-name: slideIn;
+        }
+        #content {
+            position: relative;
+            bottom: 250px;
+            left: 300px;
+            width: 900px;
+            text-align: left;
+            font-family: 'Open Sans', sans-serif;
+        }
+        p {
+            font-family: 'Open Sans', sans-serif;
+            text-align: left;
+        }
+        .page-header {
+            background-color: #53900F;
+            height: 40px;
+            margin-top: 130px;
+            width: 600px;
+            border-radius: 40px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 40px;
+            color: white;
+            font-weight: bold;
+            
+        }
+        </style>
+            
+</head>
+
+
+<body>
+    <div id = "title-div" class= "pagewide">
+        <img id = "logo" src= "tabitha_logo.png">
+        <span id= "title">Tabitha Cambodia</span>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-pale">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li id = "home-nav-item" class="nav-item">
+                <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    About us
+                  </a>
+                <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="aboutus.html">Description of Tabitha</a></li>
+                    <li><a class="dropdown-item" href="map.html">Map</a></li>
+               </li>
+               </ul>
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tabitha Programmes
+                  </a>
+                <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="SavingsAndFamilyPartnerships.html">Savings & Family Partnerships</a></li>
+                    <li><a class="dropdown-item" href="watersources.html">Water Sources</a></li>
+                    <li><a class="dropdown-item" href="housebuilding.html">House Building</a></li>
+                    <li><a class="dropdown-item" href="school.html">Schools</a></li>
+                    <li><a class="dropdown-item" href="https://www.nokor-tep.net/">Hospital</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="newsletter.html">Newsletter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Donate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="publications.html">Publications</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Media
+                      </a>
+                    <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="newsandevents.html">News & Events</a></li>
+                        <li><a class="dropdown-item" href="photos.html">Photo Gallery</a></li>
+                        <li><a class="dropdown-item" href="videos.html">Videos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="FAQ.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="contactus.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="onlineshop.html">Online Shopping</a>
+                </li>
+              
+            </ul>
+            
+
+          </div>
+        </div>
+      </nav>
+
+      <div class= "container">
+      <a href="#">
+        <div id="donate-here">
+            Donate Now
+        </div>
+      </a>
+      <div id="address-div">
+          <span style="position: relative; bottom: 80px; font-size: 22px; color: white; font-weight: bold;">Address & Location</span>
+          <p style="position: relative; bottom: 60px; color:white; margin: 2px;">Please be informed that Tabitha Cambodia has its new address at Nos. 173/174 Street 598 Boeng Kak 2, Khan Toul Kork (Across Natural Garden Shop). Our phone numbers - Cellcard: 012746653 Smart: 098575367</p>
+      </div>
+
+      <a href="#">
+        <div id="gifts-that-give-div">
+            <span style="font-size: 30px;">Gifts that Give</span>
+            Change lives for 20$
+        </div>
+      </a>
+
+      <div id="newsletter">
+          Sign up for our newsletters!
+          <form>
+              <input type="text" id= "email">
+          </form>
+      </div>
+
+      <div id="ourprogrammes">
+          <div class="centered">Our programmes:</div>
+        <ul>
+            <li><a href="SavingsAndFamilyPartnerships.html">Savings and Family Partnerships</a></li>
+            <li><a href="watersources.html">Water Sources</a></li>
+            <li><a href="housebuilding.html">House Building</a></li>
+            <li><a href="school.html">Schools</a></li>
+            <li><a href="onlineshop.html">Online Shopping</a></li>
+            <li><a href="https://www.nokor-tep.net/">Hospital</a></li>
+        </ul>
+      </div>
+      <div id="media-div">
+        <div class="centered">Media:</div>
+      <ul>
+          <li><a href="newsandevents.html">News</a></li>
+          <li><a href="photos.html">Photo Gallery</a></li>
+          <li><a href="videos.html">Video</a></li>
+      </ul>
+    </div>
+
+
+  <div id= "content">
+      <div class= "page-header"><span style="color: white; position: relative; bottom: 70px;">Tabitha Cambodia House Building Program</span></div>
+      <p>
+        <strong><span style="color: #008000;"><img style="float: left; margin-left: 0px; margin-right: 10px;" src="house_1.jpg" alt="" width="482" height="253" />HISTORY OF VOLUNTEERS AND HOUSEBUILDING:</span></strong><br />In early 1995, Andy Payne, a teacher with United World College in Singapore, came to Cambodia and learned about Tabitha. Andy wanted his students to come and learn about poverty through a volunteer experience.</p>
+<p style="text-align: justify;">Tabitha Cambodia responded to this request by developing the house building project. The concept was to provide a learning experience that taught the recent history of Cambodia and to combine this learning with a practical experience of the impact on many people here. This was to be done through building a small home for a family in our project.</p>
+<p style="text-align: justify;">From 1995 when the first team arrived until 2003 &ndash; the number of houses built was deeply affected by various coup attempts within Cambodia and concern over health issues such as SARS and the bird flu. Since 2003, the number of volunteers and the house being built have increased from 300 per year to a current average of 1000 plus per year.</p>
+<p><strong><span style="color: #008000;">PURPOSES OF VOLUNTEER HOUSEBUILDING:</span></strong><br /><br />1.To provide an in depth and meaningful experience for foreigners visiting Cambodia. The team members will experience not only the tourist attractions but will come to understand and befriend Cambodians - both the poorest and the middle class.</p>
+<p>2.To educate volunteers about poverty and the issues involved - it is an education in the causes of poverty, the results of poverty and solutions to poverty.</p>
+<p>3.To become partners with Tabitha-Cambodia in our outreach - team members become volunteer sales people as well as fund raise for various projects.</p>
+<p>4.To give Cambodians the opportunity to teach foreigners the skills of house building - rather than being taught by the foreigners - develops a deep sense of pride.</p>
+<p>5.The families chosen represent the very poorest in their communities as well as being role models for their courage and faith in their own ability to <br />overcome seemingly insurmountable odds.</p>
+<p style="text-align: justify;"><span style="color: #008000;"><strong>PROCESSES OF SELECTING FAMILIES:</strong></span><br /><br /><img style="float: right; margin-left: 5px; margin-right: 0px;" src="house_2.jpg" alt="" width="370" height="238" />Many families participating in the &ldquo;Community Development Through Family Savings Program&rdquo; are able to save enough money to buy land and the materials to build a house. However, some very poor families cannot save all the money required for land and a house &ndash; for example, widows, single mothers, landmine victims, children orphaned as a result of AIDS, etc.</p>
+<p style="text-align: justify;">Community elders and Tabitha staff select the neediest families, who are to receive a house, from within the participant&rsquo;s of the savings program in a community. Each family selected will contribute $50 USD towards the materials of their home &ndash; the team pays the rest. Families that are receiving a home must own the land where the house will be built.</p>
+<p style="text-align: justify;"><br />Tabitha Cambodia invites international volunteer building teams to Cambodia to finance the materials for the houses and these teams then work, under the direction of Khmer builders, to complete the simple houses.</p>
+<p>&nbsp;</p>
+<h1><span style="color: #ffffff;">Quick Facts on How to Arrange a House Building Trip</span></h1>
+<p><strong><span style="color: #008000;">1) ARRANGING A TEAM</span></strong><br /><br /><span style="color: #008000;"><strong>What sort of groups form house-building teams?</strong></span></p>
+<p><strong>.</strong> SchoolsCorporates<br /><strong>.</strong> Rotaries and other volunteer organizations<br /><strong>.</strong> Church groups<br /><strong>.</strong> Family Teams<br /><strong>.</strong> Individuals</p>
+<p><span style="color: #008000;"><strong>Does Tabitha Cambodia itself arrange House Building trips?</strong></span><br />1. Tabitha Cambodia does not set up or arrange a team of house builders &ndash; that is done in countries of origin &ndash; dates for the actual finishing of houses are done in conjunction with Janne Ritskes, Director of Tabitha Cambodia.<br />2. For liability reasons, Tabitha Cambodia does not arrange or sponsor house building volunteers. All volunteers come with the understanding that they responsible for their own liabilities.<br />3. Tabitha Cambodia does not have the facility for volunteers passing through Cambodia on a trip, to join already existing teams in country.</p>
+<p><strong>&nbsp;<span style="color: #008000;">What is a typical Tabitha Cambodia house-building trip schedule?</span></strong></p>
+<table class="head" style="width: 100%;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center;" colspan="4"><span style="color: #ffffff;">Tabitha Cambodia has developed a very successful &ldquo;formula&rdquo; for house-building trips. Typically, this includes:</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="color: #008000;"><strong>Day 1</strong></span></td>
+<td style="text-align: center;"><strong><span style="color: #008000;">Day 2*</span></strong></td>
+<td style="text-align: center;"><span style="color: #008000;"><strong>Day 3&amp; 4</strong></span></td>
+<td style="text-align: center;"><span style="color: #008000;"><strong>Day 5</strong></span></td>
+</tr>
+<tr>
+<td rowspan="5"><strong>.</strong> Half-day taken up at Tabitha Cambodia with an orientation briefing by Janne Ritskes.<br /><strong>.</strong> Half-day taken up by visits to Tuol Sleng Prison (S-21)</td>
+<td rowspan="5"><span style="color: #000000;"><strong>.</strong> Travel day to regional city/town (if building away from Phnom Penh )</span></td>
+<td rowspan="5"><span style="color: #000000;"><strong>.</strong> Building houses</span></td>
+<td rowspan="5"><strong>.</strong> Travel back to Phnom Penh. End of trip.<br /><br /><br /></td>
+</tr>
+</tbody>
+
+
+
+
+
+
+        <p><span style="color: #ff0000;"><strong>* if your team is staying in Phnom Penh, delete Days 2 and 5</strong></span></p>
+        <p><span style="color: #008000;"><strong>Does the team need experience building?</strong></span><br />Tabitha building teams do not actually "build" houses; they "complete" houses by nailing on the walls and floors. Prior to the team's arrival, a Cambodian builder under contract to Tabitha (the "Contractor"), actually builds the foundations, frame and roof.&nbsp; Your team should include members who are reasonably adept with a hammer and at least some who are comfortable working from ladders.&nbsp; The contractor (and the families) will guide and direct you.</p>
+        <p><span style="color: #008000;"><strong>When to go?</strong></span><br />Tabitha can accommodate building teams at any time of the year except:</p>
+        <p><strong>.</strong> Between December 20th and December 31th<br /><strong>.</strong> Khmer New Year ( the holiday is around the week of April 10th-23th)</p>
+        <p>Tabitha Cambodia will be closed for other specific public holidays such as Pchum Ban (September) and the Water Festival (November) <br /><span style="color: #008000;"><em>Tabitha Cambodia is closed on Sundays and does not work on that day. Please make your schedules to bear this in mind.</em></span></p>
+        <p><span style="color: #008000;"><strong>What arrangements will Tabitha Cambodia make for you?</strong></span></p>
+        <p><strong>.</strong> Book the bus or vans to the building site (from Phnom Penh or the regional city / town where you are staying)<br /><strong>.</strong> Book the hotel&nbsp; -- ONLY if you are staying outside Phnom Penh<br /><strong>.</strong> Bring the baguettes for lunch&nbsp; (your team will have to purchase everything else for site lunches)<br /><strong>.</strong> Bring the drinking water to the building site<br /><strong>.</strong> Provide water to cool down ("Water break")<br /><strong>.</strong> Provide a safe area to store bags etc. at the building site.</p>
+        <p>Each team is required to reimburse Tabitha for the cost of bus/van hire, water on site and baguettes at the end of the build.<br /><br /><span style="color: #008000;"><strong>How many people can be in a team and how many houses can my team build?</strong></span><br /><br /><span style="color: #008000;"><strong>Teams build between 6 and 40 houses depending on:</strong></span></p>
+        <p><strong>.</strong> Size of the team<br /><strong>.</strong> The amount of fundraising the team can do<br /><strong>.</strong> The length of the trip</p>
+        <p>Travel to Cambodia is relatively expensive and teams have been anticipating the trip for months, it is therefore important to ensure that the team members feel as though they have worked hard each day. It is disappointing to the team to finish building too early in the day, so make sure that you build enough houses to keep the team busy.<br /><br />Due to the shortage of wood in Cambodia, the walls of all houses are now made from a thin corrugated iron.&nbsp; This material is very sharp, so all volunteer builders should wear protective gloves. Nailing on this corrugated iron is quicker than nailing on the wooden planks previously used for the walls. This means that teams can now build more houses.</p>
+        <p><span style="color: #008000;"><strong>What are the actual costs for houses?</strong></span></p>
+        <p><span style="color: #ff0000;"><strong>The cost for each house is US$1,700.</strong></span></p>
+        <p><span style="color: #ff0000;"><strong>The minimum number of houses to be built must be 6 houses per team.</strong></span></p>
+        <p><span style="color: #ff0000;"><strong>Housebuilding funds must be remitted to Cambodia&nbsp;six weeks prior to housebuilding date.</strong></span> Tabitha Cambodia needs to get government approval, buy and move materials and build the frames of the houses at least 6 weeks before a team arrives.&nbsp;</p>
+        <p><span style="color: #ff0000;"><strong>The full liability for a particular housebuilding project by a team must be fully paid first before they can do the next housebuilding.</strong></span> &nbsp;</p>
+        <p><br /><span style="color: #008000;"><strong>What are the additional costs?</strong></span></p>
+        <p>Budget for:<br /> <strong>.</strong> Airfares to and from Cambodia<br /><strong>.</strong> Accommodation , meals and travel in Cambodia<br /><strong>.</strong> Travel and accommodation before and after the house building trip<br /><br /><span style="color: #008000;"><strong>NEXT STEP</strong></span></p>
+        <p><span style="color: #008000;"><strong>Tabitha Cambodia:</strong></span></p>
+        <p><br />Contact&nbsp; Tabitha Cambodia and confirm a building date and itinerary. We will need to know:</p>
+        <p><strong>.</strong> Date of arrival<br /><strong>.</strong> Team size&nbsp; and composition (adults/children/males/females)<br /><strong>.</strong> Number of houses to be built<br /><br />Tabitha Cambodia has over 100 international building teams per year and so:<br /><strong>.</strong> Plan 6-12 months ahead<br /><strong>.</strong> Try to be flexible with dates.<br /><br />Make arrangements to have funds in Cambodia <strong><span style="color: #008000;">six weeks prior to housebuilding date</span></strong>. Tabitha Cambodia needs to get government approval, buy and move materials and build the frames of the houses at least 6 weeks before a team arrives.&nbsp;</p>
+        <p>&nbsp;</p>
+        <p><span style="color: #003300;"><strong><span style="color: #039508; font-size: small;"><strong>Cultural Rules for Volunteers:</strong></span><br /></strong></span></p>
+        <p>The cardinal rule as a volunteer for Tabitha Cambodia is the principle of servant hood. <strong><span style="color: #ff0000;">ITS NOT ABOUT YOU</span></strong>&nbsp;&ndash; it&rsquo;s about the people you have come to serve &ndash; it is all about them and putting them first.</p>
+        <p>Following are some of the rules to follow while house building with Tabitha Cambodia:</p>
+        <ul>
+        <li>Do not pick up or touch the children &ndash; foreigners are seen as pedophiles or as wanting to take children &ndash; your actions meant to make you feel good are seen very differently in the eyes of Cambodians. If you don&rsquo;t touch strange children in your home countries, please don&rsquo;t touch children in Cambodia.</li>
+        <li>No pictures of children may be shown on any public forum such as face book, instagram, etc.</li>
+        <li>No drugs, no prostitution is allowed while under Tabitha Cambodia volunteer trips</li>
+        <li>Do not touch people &ndash; satu in greeting &ndash; if you touch someone they should be the same sex as yourself</li>
+        <li>Do not feel offended if villagers touch your skin or hair. We are abnormal in their eyes &ndash; and they are fascinated by our color, hairy arms and funny colored eyes and hair. Remember blue eyes in Cambodia mean that you are blind &ndash; cataracts are endemic and change dark eyes blue.</li>
+        <li>Do not give anything to anyone &ndash; especially at house building sites &ndash; your generosity causes discord and jealousy. Street begging is a lucrative business &ndash; giving money to street children insures that they will not be allowed to go to school. Begging is run by syndicates!</li>
+        <li>Do not share your food with people in the community &ndash; often our food makes them ill &ndash; they are not used to preservatives or the many weird things that we eat. You are welcome to eat village food &ndash; if it causes you to be sick &ndash; do not complain. Be wise.</li>
+        <li>Drink only bottled water!</li>
+        <li>There is absolutely no drinking of alcoholic beverages allowed in or around our communities</li>
+        <li>Dress appropriately &ndash; both sexes must wear t-shirts that have sleeves and are modest; long shorts or long pants &ndash; some tourist&rsquo;s areas will refuse you entry without long pants and proper t-shirts &ndash; avoid wearing blue jeans &ndash; this is a very hot country. Proper dress in communities is an absolute.</li>
+        <li>Only wear closed in shoes such as sneakers at house building sites.&nbsp;</li>
+        <li>Foreigners are seen as weak people by Cambodians &ndash; we are seen as spoiled and silly. Our overreaction to minor scrapes and cuts confirms these beliefs. If you are injured during house building &ndash; do not over react &ndash; instead you and you alone should go to the medic on the team &ndash; the rest of the team &ndash; mind your own business and continue to work.</li>
+        <li>There is no electricity, running water or western toilets in our communities. Be prepared to use a squat pot, wash out of water barrels. Please take along your own toilet paper plus a bag to put the paper in and take it back to the hotel for disposal.</li>
+        <li>Water breaks &ndash; the pouring of water over your heads will cool you down and keep you cool throughout the day. No heat stroke allowed!</li>
+        <li>No electronics are allowed in the community &ndash; the team should assign one person to take pictures of all the volunteers working.</li>
+        <li>Teams must ensure that they have a suitable medical kit with them. Injuries are solely the responsibility of teams and team members.</li>
+        <li>Please make sure that you take all your garbage with you when leaving the village.</li>
+        <li>Please be prepared to leave your hotel on time for the work site &ndash; traffic is very unpredictable. Also this shows respect for Tabitha staff as well as your co volunteers.</li>
+        <li>Getting a massage may be a negative experience especially for females. Make sure you choose a good massage place. Female students must be accompanied by a responsible adult and must be in sight at all times.</li>
+        <li>Be very aware of your surroundings at all times. Never take a motorbike taxi. If taking a tuk-tuk, be aware that you are targets for robberies. You have rental vans at your disposal &ndash; use them.</li>
+        <li>Limit the use of jewelry &ndash; be discreet with your money. On house building days &ndash; leave your passports at the hotels.</li>
+        <li>Do not make promises to villagers &ndash; do not promise pictures or money &ndash; we will not honor your promises!!!&nbsp; You will just re-affirm what Cambodians believe about us - we are good time people with no substance.</li>
+        <li>Have a good time &ndash; a smile goes a long way and makes your day a lot more fun.</li>
+        </ul>
+        <p><strong><span style="color: #008000;">&nbsp;</span></strong></p></pre></p>
+        <br />
+        <div class=""></p>
+  </div>
+
+</body>
